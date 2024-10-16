@@ -1,0 +1,19 @@
+.image-container {
+  width: 100%;
+  max-width: 600px; /* Adjust this value as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fixed-dimension {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
