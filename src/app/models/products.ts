@@ -4,6 +4,7 @@ export interface IProduct {
   info: string;
   gender: string;
   price: number;
+  imageUrl: string;
   isActive: boolean;
   isDeleted: boolean;
   CreatedOn: Date;

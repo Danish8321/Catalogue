@@ -1,0 +1,17 @@
+<div class="container" style="background-color: rgb(12, 218, 218);">
+    <section class="products">
+        @for (product of products; track product.id) {
+        <div class="product-card">
+            <div class="product-image">
+                <img src="{{product.imageUrl}}" alt="Avatar">
+            </div>
+            <div class="product-info">
+                <h5>Winter Jacket</h5>
+                <h6>$99.99</h6>
+            </div>
+        </div>
+        <!-- <app-product-card [product]="product"></app-product-card> -->
+        <!-- </div> -->
+        }
+    </section>
+</div>
