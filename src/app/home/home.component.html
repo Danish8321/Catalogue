@@ -1,4 +1,4 @@
-<div class="container" style="background-color: rgb(12, 218, 218);">
+<div class="container">
     <section class="products">
         @for (product of products; track product.id) {
         <div class="product-card">
@@ -6,8 +6,8 @@
                 <img src="{{product.imageUrl}}" alt="Avatar">
             </div>
             <div class="product-info">
-                <h5>Winter Jacket</h5>
-                <h6>$99.99</h6>
+                <h4>Winter Jacket</h4>
+                <h5>$99.99</h5>
             </div>
         </div>
         <!-- <app-product-card [product]="product"></app-product-card> -->
