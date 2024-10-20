@@ -1,0 +1,15 @@
+<section class="product-detail-container">
+    <section class="product-images">
+        @if (images.length>0) {
+        <gallery class="gallery"
+                 [items]="images"
+                 imageSize="cover"
+                 fluid
+                 thumbs
+                 thumbPosition="bottom">
+        </gallery>}
+    </section>
+    <section class="product-details">
+        <app-product-full-details [productId]="productId"></app-product-full-details>
+    </section>
+</section>

@@ -1,0 +1,16 @@
+.product-detail-container {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-images {
+    width: auto;
+    flex: 4.5;
+}
+
+.product-details {
+    flex: 5.5;
+}

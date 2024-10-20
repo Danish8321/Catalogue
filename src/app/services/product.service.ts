@@ -14,4 +14,8 @@ export class ProductService {
   async loadProducts(): Promise<IProduct[]> {
     return await firstValueFrom(this.http.get<IProduct[]>('mockData.json'));
   }
+
+  async loadDummyImages(): Promise<any> {
+    return await firstValueFrom(this.http.get<any>('mockPics.json'));
+  }
 }

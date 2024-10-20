@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "Url": "https://picsum.photos/id/1/900/800",
+    "IsMain": 1,
+    "ProductId": 1
+  },
+  {
+    "id": 2,
+    "Url": "https://picsum.photos/id/2/900/800",
+    "IsMain": 0,
+    "ProductId": 1
+  },
+  {
+    "id": 3,
+    "Url": "https://picsum.photos/id/25/900/800",
+    "IsMain": 0,
+    "ProductId": 1
+  },
+  {
+    "id": 4,
+    "Url": "https://picsum.photos/id/35/900/800",
+    "IsMain": 0,
+    "ProductId": 1
+  },
+  {
+    "id": 5,
+    "Url": "https://picsum.photos/id/45/900/800",
+    "IsMain": 0,
+    "ProductId": 1
+  }
+]

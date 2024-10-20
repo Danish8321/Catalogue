@@ -1,11 +1,39 @@
-.container {
-  background-color: #fefae0;
-  margin: 40px;
-}
-
-.products {
+.home-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
 }
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+
+  .card {
+    padding-top: 5px;
+    background-color: white;
+  }
+
+  .image {
+    width: 260px;
+    height: 320px;
+  }
+
+  .info {
+    text-align: center;
+  }
+}
+
+// .container {
+//   margin: 40px;
+// }
+
+// .products {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 40px;
+//   justify-content: center;
+// }

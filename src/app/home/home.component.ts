@@ -1,12 +1,13 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { IProduct } from '../models/products';
+import { ProductCardComponent } from '../products/product-card/product-card.component';
 import { ProductService } from '../services/product.service';
-import { ProductCardComponent } from "../product-card/product-card.component";
+import { ContactUsComponent } from "../contact-us/contact-us.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProductCardComponent],
+  imports: [ProductCardComponent, ContactUsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

@@ -1,7 +1,37 @@
-<div class="container">
+<!-- <div class="container">
     <section class="products">
         @for (product of products; track product.id) {
         <app-product-card [product]="product"></app-product-card>
         }
     </section>
-</div>
+</div> -->
+
+<section class="home-container">
+    <section class="category">
+        <div class="card" style="background-color: white;">
+            <div class="image">
+                <img src="images/boy.jpg" alt="boy">
+            </div>
+            <div class="info">
+                <h4>Boy</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/girl.jpg" alt="girl">
+            </div>
+            <div class="info">
+                <h4>Girl</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/baby.jpg" alt="baby">
+            </div>
+            <div class="info">
+                <h4>Infant</h4>
+            </div>
+        </div>
+    </section>
+    <section><app-contact-us></app-contact-us></section>
+</section>
