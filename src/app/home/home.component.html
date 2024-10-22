@@ -1,14 +1,6 @@
-<!-- <div class="container">
-    <section class="products">
-        @for (product of products; track product.id) {
-        <app-product-card [product]="product"></app-product-card>
-        }
-    </section>
-</div> -->
-
 <section class="home-container">
     <section class="category">
-        <div class="card" style="background-color: white;">
+        <div class="card" (click)="setCategory('boy')">
             <div class="image">
                 <img src="images/boy.jpg" alt="boy">
             </div>
@@ -16,7 +8,7 @@
                 <h4>Boy</h4>
             </div>
         </div>
-        <div class="card">
+        <div class="card" (click)="setCategory('girl')">
             <div class="image">
                 <img src="images/girl.jpg" alt="girl">
             </div>
@@ -24,9 +16,9 @@
                 <h4>Girl</h4>
             </div>
         </div>
-        <div class="card">
+        <div class="card" (click)="setCategory('infant')">
             <div class="image">
-                <img src="images/baby.jpg" alt="baby">
+                <img src="images/baby.jpg" alt="infant">
             </div>
             <div class="info">
                 <h4>Infant</h4>

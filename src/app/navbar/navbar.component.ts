@@ -1,5 +1,5 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +9,5 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent implements OnInit {
-  private router = inject(Router);
-
-  ngOnInit(): void {
-    this.router.navigateByUrl('/');
-  }
+  ngOnInit(): void {}
 }

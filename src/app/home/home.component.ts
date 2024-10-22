@@ -1,25 +1,20 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { IProduct } from '../models/products';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ProductCardComponent } from '../products/product-card/product-card.component';
-import { ProductService } from '../services/product.service';
-import { ContactUsComponent } from "../contact-us/contact-us.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProductCardComponent, ContactUsComponent],
+  imports: [ProductCardComponent, ContactUsComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent implements OnInit {
-  productService = inject(ProductService);
-  products: IProduct[] = [];
+export class HomeComponent {
+  private route = inject(Router);
 
-  async ngOnInit(): Promise<void> {
-    this.products = await this.loadProducts();
-  }
-
-  async loadProducts(): Promise<IProduct[]> {
-    return await this.productService.loadProducts();
+  setCategory(category: string) {
+    localStorage.setItem('category', category);
+    this.route.navigate(['/products']);
   }
 }
