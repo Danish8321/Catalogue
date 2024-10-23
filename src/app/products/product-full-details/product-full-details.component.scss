@@ -1,0 +1,33 @@
+.product-full-details-container {
+    margin-left: 40px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+}
+
+.separator {
+    padding: 1px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 99%;
+    border-radius: 50%;
+}
+
+.chip {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chip:hover {
+    background-color: #d5d5d5;
+}

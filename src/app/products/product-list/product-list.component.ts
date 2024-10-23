@@ -19,7 +19,6 @@ export class ProductListComponent implements OnInit {
     this.category = localStorage.getItem('category') ?? 'infant';
     let results = await this.loadProducts();
     this.products = results.filter((prod) => prod.gender === 'M');
-    console.log('');
   }
 
   async loadProducts(): Promise<IProduct[]> {
